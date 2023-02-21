@@ -22,5 +22,20 @@ pipeline {
 			}
 		}
 	}
+	post
+	{
+	  always
+	  {
+		 echo 'I RUN ALWAYS'
+	  }
+	  success
+	  {
+		 echo 'I RUN succesfully'
+	  }
+	  failure
+	  {
+		 echo 'I failed to  RUN '
+	  }
+	}
 		
 }
