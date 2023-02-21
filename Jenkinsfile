@@ -3,7 +3,7 @@ pipeline {
 	agent { 
 	docker
 	  {
-		image 'maven:latest'
+		image 'maven:3.6.3'
 	  } 
 	 }
 
