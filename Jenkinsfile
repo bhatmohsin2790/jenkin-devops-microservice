@@ -59,7 +59,7 @@ pipeline {
 		{
 			steps{
 			 script {
-				dockerImage = docker.build("bhatmohsin2790/currency-exchange")
+				dockerImage = docker.build("bhatmohsin2790/currency-exchange:$env.BUILD_TAG")
 
 			 }
 			}
